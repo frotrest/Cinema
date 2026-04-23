@@ -1,0 +1,81 @@
+.rating {
+  padding-top: 150px;
+}
+
+@media (max-width: 992px) {
+  .rating {
+    padding-top: 80px;
+  }
+}
+
+.ratingContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background: url('@assets/rating.png') no-repeat center / cover;
+  padding: 125px 95px 125px 190px;
+}
+
+@media (max-width: 992px) {
+  .ratingContent {
+    padding: 125px 25px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.datesTitle {
+  color: rgba(209, 169, 84, 1);
+  font-family: 'Open Sans Condensed';
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 98px;
+  letter-spacing: 10%;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.ratingCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.starsAmount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.ratingCardTitle {
+  width: 540px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans';
+  margin: 0px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 768px) {
+  .ratingCardTitle {
+    width: 290px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}

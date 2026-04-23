@@ -1,0 +1,168 @@
+.about {
+  padding-top: 150px;
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding-top: 80px;
+  }
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+@media (max-width: 992px) {
+  .aboutContent {
+    gap: 60px;
+  }
+}
+
+.aboutContentTitle::first-letter {
+  color: rgba(209, 169, 84, 1);
+}
+
+.aboutContentTitle {
+  color: white;
+  font-family: 'Open Sans Condensed';
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 65px;
+  letter-spacing: 10%;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.theaterDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .theaterDescription {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.theaterDescriptionTitle {
+  margin: 0px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans Condensed';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.theaterDescriptionItem {
+  width: 445px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans';
+  font-style: Regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .theaterDescriptionItem {
+    width: 460px;
+    text-align: center;
+  }
+}
+
+.theaterNumbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .theaterNumbers {
+    align-items: center;
+  }
+}
+
+.theaterNumbersCards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .theaterNumbersCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.theaterNumbersTitle {
+  color: rgba(255, 255, 255, 1);
+  margin: 0px;
+  font-family: 'Open Sans Condensed';
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.theaterNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.theaterNumberTitle {
+  color: white;
+  font-family: 'Open Sans Condensed';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 5%;
+  margin: 0px;
+}
+
+.theaterNumberSubTitle {
+  color: rgba(209, 169, 84, 1);
+}
+
+.theaterImg {
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .theaterImg {
+    display: none;
+  }
+}

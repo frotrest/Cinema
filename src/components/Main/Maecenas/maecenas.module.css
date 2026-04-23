@@ -1,0 +1,219 @@
+.maecenas {
+  padding-top: 120px;
+}
+
+@media (max-width: 992px) {
+  .maecenas {
+    padding-top: 90px;
+  }
+}
+
+.maecenasContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+@media (max-width: 992px) {
+  .maecenasContent {
+    gap: 60px;
+  }
+}
+
+.maecenasContentSubTitle {
+  color: rgba(209, 169, 84, 1);
+}
+
+.maecenasContentTitle {
+  color: white;
+  font-family: 'Open Sans Condensed';
+  margin: 0px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 65px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.maecenasCards {
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+  align-items: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .maecenasCards {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 992px) {
+  .maecenasCards {
+    gap: 60px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contactsDepartment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .contactsDepartment {
+    align-items: flex-end;
+  }
+}
+
+.contactsItem {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans Condensed';
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 5%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.contactsItem:hover {
+  color: rgba(209, 169, 84, 1);
+}
+
+.becomeMaecenate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.maecenasForms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 730px;
+}
+
+@media (max-width: 768px) {
+  .maecenasForms {
+    width: auto;
+  }
+}
+
+.maecenasFormsCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.maecenasFormLabelInput {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  width: 180px;
+  background-color: rgba(68, 68, 68, 1);
+  color: rgba(152, 152, 152, 1);
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.formSendReview {
+  background-color: rgba(68, 68, 68, 1);
+  color: rgba(152, 152, 152, 1);
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  resize: none;
+  padding: 15px;
+  width: 310px;
+  height: 100px;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .formSendReview {
+    width: 100%;
+    max-width: 390px;
+  }
+}
+
+.maecenasSend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .maecenasSend {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.maecenasFormTitle {
+  color: rgba(152, 152, 152, 1);
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin: 0px;
+  width: 390px;
+}
+
+@media (max-width: 768px) {
+  .maecenasFormTitle {
+    text-align: center;
+  }
+}
+
+.maecenasFormBtn {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans Condensed';
+  border: none;
+  background-color: rgba(209, 169, 84, 1);
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.maecenasFormBtn:hover {
+  opacity: 1;
+}

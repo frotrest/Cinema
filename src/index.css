@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgba(51, 51, 51, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+[data-animate] {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url('./fonts/OpenSansCondensedbold.ttf');
+}

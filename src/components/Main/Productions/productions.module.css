@@ -1,0 +1,129 @@
+.productions {
+  padding-top: 150px;
+}
+
+@media (max-width: 992px) {
+  .productions {
+    padding-top: 90px;
+  }
+}
+
+.productionsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+@media (max-width: 992px) {
+  .productionsContent {
+    gap: 60px;
+  }
+}
+
+.aboutContentSubTitle {
+  color: rgba(209, 169, 84, 1);
+}
+
+.aboutContentTitle {
+  color: white;
+  font-family: 'Open Sans Condensed';
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 65px;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.productionsSwiper {
+  width: 100%;
+  overflow: hidden;
+  display: block !important;
+}
+
+@media (max-width: 1200px) {
+  .productionsSwiper {
+    display: block !important;
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
+.productionCard {
+  cursor: pointer;
+  position: relative;
+  width: 440px;
+}
+
+.productionCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 40px 0px 40px 40px;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.productionCardTextTitle {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans Condensed';
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+
+.productionCardTextData {
+  writing-mode: vertical-rl;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans Condensed';
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+}
+
+.searchBtn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 35px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(209, 169, 84, 1);
+  border-radius: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.productionCard:hover .productionCardText {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.productionCard:hover .searchBtn {
+  opacity: 1;
+  visibility: visible;
+}

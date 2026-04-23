@@ -1,0 +1,28 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 60px;
+  }
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(86, 86, 86, 1);
+  padding-top: 30px;
+}
+
+.footerContentItem {
+  color: rgba(152, 152, 152, 1);
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin: 0px;
+}
