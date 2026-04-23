@@ -1,18 +1,46 @@
-# React + Vite
+Project Overview: The Great Theater
+The Great Theater is a high-quality landing page for a famous theater. It combines a classic style with modern web development. I built this project to show how to handle complex layouts, positioning, and fully responsive design in React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Purpose
+Cultural Experience: To create a website that feels like a theater through elegant fonts and a clean user interface.
 
-Currently, two official plugins are available:
+Frontend Skills: To show my ability to build "Pixel-Perfect" designs from Figma, including vertical text and custom navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features
+Core Functionality:
 
-## React Compiler
+Dual Navigation: A standard header plus a fixed left sidebar (AsideBar) with vertical text for social media links and contacts.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Responsive Slider: A smooth gallery built with Swiper.js. It changes from 1 slide on mobile to a multi-card layout on desktop.
 
-Note: This will impact Vite dev & build performances.
+Mobile Burger Menu: A custom-made mobile menu built with React state. It’s lightweight and fast because I didn't use heavy UI libraries.
 
-## Expanding the ESLint configuration
+Adaptive Grid: A flexible max-width container that makes sure the content looks good on all screens, from large monitors to small phones.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Animations & UI:
+
+Scroll Animations: I used data-animate attributes to make elements fade in as the user scrolls down the page.
+
+Interactive Hover Effects: Links and buttons change color (to a gold accent) and size slightly when you hover over them.
+
+Technical Implementation
+React Components: I used a modular structure (Header, Hero, Productions, BurgerMenu) to keep the code clean and easy to update.
+
+CSS Modules: Each component has its own styles. This prevents bugs and keeps the CSS organized.
+
+Dynamic Classes: I used the clsx library to manage classes easily, like when opening or closing the mobile menu.
+
+Performance: I used @font-face with font-display: swap for faster font loading and optimized all images for better speed.
+
+Swiper.js Customization: I configured the slider with custom breakpoints and autoplay to match the project's needs.
+
+Tech Stack:
+Core: React
+
+Styling: CSS Modules, Flexbox, Grid
+
+Slider: Swiper.js
+
+Icons: React Icons
+
+Utilities: clsx
