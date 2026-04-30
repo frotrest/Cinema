@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from '../header.module.css';
 import Container from '../../../Container';
 import React from 'react';
-import Poster from '@assets/poster.png';
+import Poster from '@assets/poster.webp';
 
 const Hero = () => {
   return (
@@ -18,7 +18,12 @@ const Hero = () => {
           </p>
           <button className={clsx(styles.heroDescriptionBtn)}>Афиша</button>
         </div>
-        <img src={Poster} alt="poster" className={clsx(styles.poster)} />
+        <img
+          src={Poster}
+          alt="poster"
+          className={clsx(styles.poster)}
+          fetchPriority="high"
+        />
       </Container>
     </section>
   );
