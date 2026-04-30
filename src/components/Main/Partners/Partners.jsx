@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from './partners.module.css';
 import Container from '../../../Container';
 import React from 'react';
-import GasProm from '@assets/gasprom.png';
+import GasProm from '@assets/gasprom.webp';
 import { IoMdSearch } from 'react-icons/io';
 
 const Partners = ({ partners = 8, partnersTable = 6, partnersMobile = 4 }) => {
@@ -23,6 +23,7 @@ const Partners = ({ partners = 8, partnersTable = 6, partnersMobile = 4 }) => {
               alt={`partner-${i}`}
               className={clsx(styles.partner)}
               key={i}
+              loading="lazy"
             />
           ))}
         </div>

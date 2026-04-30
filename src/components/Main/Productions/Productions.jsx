@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import styles from './productions.module.css';
 import Container from '../../../Container';
 import React from 'react';
-import Oskar from '@assets/oskar.png';
-import GoldGraphon from '@assets/gold-graphon.png';
-import NutCracker from '@assets/nutcracker.png';
+import Oskar from '@assets/oskar.webp';
+import GoldGraphon from '@assets/gold-graphon.webp';
+import NutCracker from '@assets/nutcracker.webp';
 import { IoMdSearch } from 'react-icons/io';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectCoverflow } from 'swiper/modules';
@@ -58,7 +58,11 @@ const Productions = () => {
           {productions.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={clsx(styles.productionCard)}>
-                <img src={item.productionImg} alt={`productionImg-${index}`} />
+                <img
+                  src={item.productionImg}
+                  alt={`productionImg-${index}`}
+                  loading="lazy"
+                />
                 <div className={clsx(styles.productionCardText)}>
                   <h2 className={clsx(styles.productionCardTextTitle)}>
                     {item.productionTitle}

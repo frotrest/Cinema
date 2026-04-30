@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from './about.module.css';
 import Container from '../../../Container';
 import React from 'react';
-import Theater from '@assets/theater.png';
+import Theater from '@assets/theater.webp';
 import { MdEventSeat } from 'react-icons/md';
 import { GiTheaterCurtains } from 'react-icons/gi';
 
@@ -57,6 +57,7 @@ const About = () => {
             src={Theater}
             alt="theater"
             className={clsx(styles.theaterImg)}
+            loading="lazy"
           />
         </div>
       </Container>
